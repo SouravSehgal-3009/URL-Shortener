@@ -1,0 +1,10 @@
+{% extends 'url_shortner/base.html' %}
+
+
+{% block content %}
+    <center>
+        <h2>URL: "{{ obj.longurl }}"</h2>
+        <h6>Your Request: "{{ obj.shorturl }}"</h6>
+        <a href="{{ obj.longurl }}"><button type="button" class="btn btn-primary">Go To Website</button></a>
+    </center>
+{% endblock content %}
